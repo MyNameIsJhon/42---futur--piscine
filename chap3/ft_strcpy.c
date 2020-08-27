@@ -1,0 +1,17 @@
+
+#include <unistd.h>
+#include <stdio.h>
+
+char	*ft_strcpy(char *dest, char *src)
+{
+	int x;
+
+	x = 0;
+	while (src[x])
+	{
+		dest[x] = src[x];
+		x++;
+	}
+	dest[x] = '\0';
+	return (dest);
+}
